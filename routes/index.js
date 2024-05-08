@@ -1,9 +1,10 @@
 const { Router } = require('express');
-const userRouter = require('./userRouter');
+const userRoutes = require('./userRoutes');
 const router = Router();
 
 
-router.use("/",userRouter);
+console.log("index.js router");
+router.use(userRoutes);
 
 
 module.exports = router;
